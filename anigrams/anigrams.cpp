@@ -157,7 +157,7 @@ int main()
     std::cout << "Total number of \"longest\" games: " << number_of_longest_games << '\n';
     for (std::vector<int>::iterator it = bests.begin(); it != bests.end(); it++)
     {
-        std::cout << print_as_set(word[*it]) << ' ' << longest(*it) << '\n';
+        std::cout << print_as_set(word[*it]) << ' ' << count_longest(*it) << " games with " << longest(*it) << " words\n";
         //generate_a_longest_game(*it);
     }
 
